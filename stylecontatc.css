@@ -1,0 +1,330 @@
+img {
+    height: 50px;
+}
+
+.buttonnav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;  /* Affiche les éléments en ligne */
+}
+
+.buttonnav ul li a {
+    text-decoration: none;  /* Supprime le soulignement des liens */
+    color: white;
+}
+
+.buttonnav li {
+    margin-right: 20px;   /* Espace entre les éléments */
+}
+
+.col {
+    padding: 20px; /* grossis le rectangle orange */
+}
+
+.col a {
+    display: block; /* Rend le lien cliquable sur toute la zone */
+    text-align: center; 
+    color: white; 
+    text-decoration: none; /* Supprime le soulignement du lien */
+}
+
+.row {
+    display: flex; 
+    margin: 20px; 
+}
+
+.col-6 {
+    padding: 70px; 
+}
+
+.col-6 h1 {
+    font-size: 2.5em; 
+    margin-bottom: 15px; /* Ajoute de l'espace en dessous du titre */
+    text-align: center;
+    color: white
+}
+
+.col-6 p {
+    font-size: 1.5em; 
+    text-align: center;
+    color: white;
+}
+
+.row {
+    display: flex; /* Utilisation de flexbox pour aligner les colonnes */
+    margin: 20px; 
+}
+
+.col-5, .col-7 {
+    padding: 20px; 
+}
+
+.col-5 h1 {
+    font-size: 2.5em; 
+    margin-bottom: 15px; 
+    text-align: center;
+}
+
+.col-7 a {
+    font-size: 1.1em; 
+    margin: 10px; 
+}
+
+.autre-image {
+    width: 100%; 
+    height: auto; /* Ajuste la hauteur automatiquement pour garder les proportions */
+    max-height: 400px; /* Définit une hauteur maximale si nécessaire */
+    display: block; /* Supprime l'espace sous l'image */
+}
+
+.row {
+    display: flex; /* Utilise flexbox pour aligner les colonnes */
+    justify-content: center; 
+    margin: 20px; 
+}
+
+.col {
+    padding: 20px; 
+    text-align: center; 
+}
+
+h1 {
+    margin-bottom: 20px; /* Ajoute de l'espace sous le titre */
+}
+
+.autre-liste {
+    list-style-type: none; /* Supprime les point par défaut */
+    padding: 0; 
+    display: flex; 
+    flex-wrap: wrap; /* Permet aux éléments de la liste de passer à la ligne */
+    justify-content: center; 
+    max-width: 300px; 
+    margin: 0 auto; /* Centre la liste horizontalement */
+}
+
+.autre-liste2 {
+    width: calc(50% - 10px); /* Définit la largeur des éléments de la liste à 50% avec une marge */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+    font-size: 1em; 
+}
+
+.row {
+    margin: 0;
+}
+
+.autre-col {
+    padding: 250px; 
+    box-sizing: border-box; 
+}
+
+.autre-titre {
+    text-align: center
+}
+
+form {
+    display: flex; /* Utilise flexbox pour aligner les éléments */
+    flex-direction: column; /* Aligne les éléments en colonne */
+    gap: 10px; /* Espace entre les éléments */
+}
+
+
+select {
+    width: 100%; 
+    padding: 10px; 
+    border-radius: 4px; /* Coins arrondis pour les champs */
+}
+
+label {
+    margin-top: 10px; 
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* Colonne pour chaque ligne de formulaire */
+}
+
+.row-cols-2 > * {
+    flex: 1; /* Chaque colonne prend la même largeur */
+}
+
+button {
+    background-color: black; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; /* Ajoute du padding pour agrandir le bouton */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Change le curseur au survol */
+    font-size: 16px; 
+    transition: background-color 0.3s; /* Animation pour le changement de couleur */
+}
+
+.footer {
+    background-color: black; 
+    color: white; 
+    padding: 20px; 
+    text-align: left; 
+    font-size: 10px; 
+}
+
+.footer h5 {
+    margin-bottom: 10px; 
+    font-size: 16px; 
+}
+
+.footer p, .footer a {
+    margin-bottom: 5px; 
+    font-size: 10px; 
+}
+
+.footer .container {
+    max-width: 1100px; /* Limite la largeur du contenu */
+    margin: 0 auto; /* Centre le contenu */
+}
+
+.footer a {
+    text-decoration: none; 
+    color: white; 
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Ajoute un soulignement au survol des liens */
+}
+
+@media (max-width: 768px) {
+    img {
+        height: auto; /* Ajuste la hauteur automatiquement pour garder les proportions */
+        max-height: 30px; /* Limite la hauteur pour les petites images */
+    }
+
+    .buttonnav ul {
+        flex-direction: column; /* Colonne pour une meilleure lisibilité */
+        align-items: center; 
+    }
+
+    .buttonnav li {
+        margin-bottom: 10px; 
+        margin-right: 0; 
+    }
+
+    .col {
+        padding: 10px; 
+    }
+
+    .col-6, .col-5, .col-7 {
+        padding: 20px;
+    }
+
+    .col-6 h1, .col-5 h1 {
+        font-size: 1.8em;
+    }
+
+    .col-6 p {
+        font-size: 1.2em;
+    }
+
+    .row {
+        flex-direction: column;
+        margin: 10px; 
+    }
+
+    .autre-liste2 {
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+
+    .autre-col {
+        padding: 50px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .footer {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .footer h5 {
+        font-size: 14px;
+    }
+
+    .footer p, .footer a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 440px) {
+    img {
+        height: auto;
+        max-height: 25px;
+    }
+
+    .buttonnav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttonnav li {
+        margin-bottom: 5px;
+        margin-right: 0;
+    }
+
+    .col {
+        padding: 5px;
+    }
+
+    .col-6, .col-5, .col-7 {
+        padding: 10px;
+    }
+
+    .col-6 h1, .col-5 h1 {
+        font-size: 1.5em;
+    }
+
+    .col-6 p {
+        font-size: 1em;
+    }
+
+    .row {
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .autre-liste2 {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .autre-col {
+        padding: 30px;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .footer {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .footer h5 {
+        font-size: 12px;
+    }
+
+    .footer p, .footer a {
+        font-size: 10px;
+    }
+}

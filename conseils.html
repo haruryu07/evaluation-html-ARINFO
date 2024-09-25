@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styleconseils.css" rel="stylesheet"/>
+    <title>Conseils</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!--barre nav avec un fond de couleur noir clair-->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo-golbal-moving.JPG" alt="logo de l'entreprise"/>
+                <span class="brand-text">PAUL ET FILS</span>
+            </a>
+            <!--ajoue du logo avec le nom de l'entreprise-->
+            <div class="buttonnav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="Apropos.html">À propos</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="conseils.html">Conseils</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!--boutton clicable en direction des autre page-->
+            <div class="row">
+                <div class="col" style="background-color: rgb(235, 70, 4);">
+                    <ul style="list-style-type: none; padding: 0; margin: 0;">
+                        <li>
+                            <a href="#formDevis" style="display: block; padding: 20px;">Devis gratuit</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--boutton clicable sur toute la surface du backround color orange qui dirige vers une autre page-->
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-6" style="background-color: rgb(235, 70, 4);">
+            <h1>Nos Conseils</h1>
+        </div>
+        <div class="col-6" style="background-color: rgb(255, 255, 255);">
+            <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Cliquez sur  « Modifier Texte » ou double-cliquez ici pour ajouter votre contenu et personnaliser les polices.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="offset-1 col-4" style="background-color: black;">
+            <h2>FAITES UNE LISTE</h2>
+            <p class="p2">Paragraphe. Cliquez ici pour ajouter votre propre texte. Cliquez sur « Modifier Texte » ou double-cliquez ici pour ajouter votre contenu et personnaliser les polices. Déplacez-moi où vous le souhaitez sur votre page. Présentez votre activité à vos visiteurs.</p>
+        </div>
+        <div class="offset-1 col-4" style="background-color: rgb(235, 70, 4);;">
+            <h3>DÉBARRASSEZ-VOUS DU SUPERFLU</h3>
+            <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Cliquez sur « Modifier Texte » ou double-cliquez ici pour ajouter votre contenu et personnaliser les polices. Déplacez-moi où vous le souhaitez sur votre page. Présentez votre activité à vos visiteurs.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="offset-1 col-4" style="background-color: rgb(235, 70, 4);">
+            <h4>ÉQUIPEZ-VOUS DU MATÉRIEL ADÉQUATE</h4>
+            <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Cliquez sur « Modifier Texte » ou double-cliquez ici pour ajouter votre contenu et personnaliser les polices. Déplacez-moi où vous le souhaitez sur votre page. Présentez votre activité à vos visiteurs.</p>
+        </div>
+        <div class="offset-1 col-4" style="background-color: black;">
+            <h5>COMMENT ORGANISER SES AFFAIRES</h5>
+            <p class="p3">Paragraphe. Cliquez ici pour ajouter votre propre texte. Cliquez sur « Modifier Texte » ou double-cliquez ici pour ajouter votre contenu et personnaliser les polices. Déplacez-moi où vous le souhaitez sur votre page. Présentez votre activité à vos visiteurs.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col autre-col" style="background-color: rgb(235, 70, 4);">
+            <h1 class="autre-titre">Votre Devis Gratuit</h1>
+            <p>Paragraphe. Cliquez ici pour ajouter votre propre texte et le modifier.</p>
+        </div>
+        <div class="col" style="background-color: rgb(235, 70, 4);">
+            <form id="formDevis">
+                <div class="form-group">
+                    <label for="villeDem">Ville de déménagement<span>*</span></label>
+                    <input type="text" id="villeDem" required name="ville de déménagement">
+                </div>
+                <div class="form-group">
+                    <label for="villeEmm">Ville d'emménagement<span>*</span></label>
+                    <input type="text" id="villeEmm" required name="ville emménagement">
+                </div>
+                <div class="form-group">
+                    <label for="eventDate" class="form-label">Date d'eménagement</label>
+                    <input type="date" class="form-control" id="eventDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Example select</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="nom">Nom<span>*</span></label>
+                    <input type="text" id="nom" required name="nom">
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom<span>*</span></label>
+                    <input type="text" id="prenom" required name="prénom">
+                </div>
+                <button type="submit">sauvegarder le formulaire</button>
+            </form>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Paul et Fils</h5>
+                <p>Numéro de licence : 123-456-7890</p>
+                <p>&copy; 2023 par Paul et Fils. Créé avec Wix.com</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Contact</h5>
+                <p>Tél : 01 23 45 67 89</p>
+                <p>E-mail : <a href="mailto:info@monsite.fr" style="color: white;">info@monsite.fr</a></p>
+                <p>15 rue du château,</p>
+                <p>75001 Paris, France</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Horaires d'ouverture</h5>
+                <p>Lun-Ven : 7h - 22h</p>
+                <p>Samedi : 8h - 22h</p>
+                <p>Dimanche : 8h - 23h</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Ressources</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" style="color: white;">Adresses</a></li>
+                    <li><a href="#" style="color: white;">Conseils</a></li>
+                    <li><a href="#" style="color: white;">FAQ</a></li>
+                    <li><a href="#" style="color: white;">Mentions légales</a></li>
+                    <li><a href="#" style="color: white;">Politique en matière de cookies</a></li>
+                    <li><a href="#" style="color: white;">Politique de confidentialité</a></li>
+                    <li><a href="#" style="color: white;">Conditions d’utilisation</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>
